@@ -66,27 +66,27 @@
             <form id="form" action="" method="post">
                 <div class="form-group">
                     <label for="lastName">Nom*</label>
-                    <input id="lastName" type="text" name="lastName" placeholder="Nom" pattern="^\D*$" required />
+                    <input id="lastName" type="text" name="lastName" placeholder="Nom" pattern="[a-zA-Z][a-zA-Z -]+" required />
                 </div>
                 <div class="form-group">
                     <label for="firstName">Prénom*</label>
-                    <input id="firstName" type="text" name="firstName" placeholder="Prénom" pattern="^\D*$" required />
+                    <input id="firstName" type="text" name="firstName" placeholder="Prénom" pattern="[a-zA-Z][a-zA-Z -]+" required />
                 </div>
                 <div class="form-group">
                     <label for="address">Adresse*</label>
-                    <textarea id="address" type="text" name="address" placeholder="Adresse" cols="20" rows="3" required></textarea>
+                    <textarea id="address" type="text" name="address" placeholder="Adresse" cols="20" rows="3" pattern="[a-zA-Z][a-zA-Z -]+" required></textarea>
                 </div>
                 <div class="form-group">
                     <label for="postalcode">Code Postal*</label>
-                    <input id="postalcode" type="text" name="postalcode" placeholder="Code Postal" required />
+                    <input id="postalcode" type="text" name="postalcode" placeholder="Code Postal" pattern="[0-9]{5}" required />
                 </div>
                 <div class="form-group">
                     <label for="city">Ville*</label>
-                    <input id="city" type="text" name="city" placeholder="Ville" required />
+                    <input id="city" type="text" name="city" placeholder="Ville" pattern="[a-zA-Z][a-zA-Z -]+" required />
                 </div>
                 <div class="form-group">
                     <label for="email">Email*</label>
-                    <input id="email" type="email" name="email" placeholder="Email" pattern="^\D*$" required />
+                    <input id="email" type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"" required />
                 </div>
                 <div class="form-group">
                     <label for="message">Commentaires</label>
